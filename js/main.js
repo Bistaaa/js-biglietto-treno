@@ -30,10 +30,17 @@ console.log("classe di età = ", classe);
 let basePrice = chilometri * kmPrice;
 console.log("prezzo base biglietto = €", basePrice,);
 
-//va applicato uno sconto del 20% per i minorenni
 
-
-//va applicato uno sconto del 40% per gli over 65.
+//calcolo prezzi scontati
+if (classe = "minorenne") {
+    let minorPrice = basePrice * 0.8;
+    console.log("prezzo minor = €", minorPrice);
+} else if (classe = "senior"){
+    let seniorPrice = basePrice * 0.6;
+    console.log("prezzo senior = €", seniorPrice);
+} else{
+    
+}
 
 
 //calcolare il prezzo totale del viaggio:
