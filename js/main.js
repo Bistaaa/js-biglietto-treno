@@ -1,9 +1,10 @@
 //chiedere all’utente il numero di chilometri che vuole percorrere
-let chilometri = prompt("inserisci chilometri da percorrere");
+let chilometri = parseInt (prompt("inserisci chilometri da percorrere"));
 console.log("chilometri da percorrere = ", chilometri);
 
 //chiedere l’età del passeggero
-
+let userAge = parseInt (prompt("inserisci la tua età"));
+console.log("età passeggero = ", userAge);
 
 //il prezzo del biglietto è di 0.21 € al km
 
