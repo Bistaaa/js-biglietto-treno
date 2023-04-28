@@ -1,5 +1,5 @@
 //dichiarqazione variabili
-let classe, finalPrice;
+let classe, totalPrice, finalPrice;
 const kmPrice = 0.21;
 
 
@@ -20,15 +20,19 @@ console.log("prezzo base biglietto = €", basePrice,);
 
 //calcolare il prezzo totale del viaggio
 if (userAge < 18) {
-    finalPrice = basePrice * 0.8;
-    console.log("prezzo minor = €", finalPrice);
+    totalPrice = basePrice * 0.8;
+    console.log("prezzo minor = €", totalPrice);
 } else if (userAge >= 65){
-    finalPrice = basePrice * 0.6;
-    console.log("prezzo senior = €", finalPrice);
+    totalPrice = basePrice * 0.6;
+    console.log("prezzo senior = €", totalPrice);
 } else{
-    finalPrice = basePrice;
-    console.log("prezzo normale = €", finalPrice);
+    totalPrice = basePrice;
+    console.log("prezzo normale = €", totalPrice);
 }
+
+
+//arrotondare prezzo ai centesimi
+finalPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
 
 
 //output del prezzo finale con massimo due decimali
